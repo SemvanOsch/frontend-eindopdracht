@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poké-shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/pokemon.png" class="pokemon-img" alt="Pokémon">
+        <a href="#catchphrase">Home</a>
+        <a href="#poke-shop">Poké-shop</a>
+        <a href="#gegevens">gegevens</a>
+        <a href="#policy">Policy</a>
+    </nav>
+    <header>
+        <section class="catch-phrase">
+            <h1 id="catchphrase">Gotta catch 'em all!</h1>
+        </section>
+        <section class="header-buttons">
+            <a href="https://www.pokemon.com/nl/" target="_blank">Home</a>
+            <a href="https://www.pokemondb.net/" target="_blank">Database</a>
+        </section>
+    </header>
+
+    <div class="container-center">
+
+        <main>
+            <section class="products">
+                <h2 id="poke-shop">Poké-shop</h2>
+                <article class="pokemon-products">
+                    <div class="product-div">
+                        <img src="images/greninja.png" class="greninja" alt="Greninja">
+                        <h3>Greninja</h3>
+                        <p>Greninja moves with the speed and grace of a ninja. It uses swift movements to confuse its
+                            enemies while it slices them
+                            up with weapons made of compressed water, most commonly in the form of throwing stars. These
+                            throwing stars are sharp
+                            enough to split metal.</p>
+                        <a href="https://pokemondb.net/pokedex/greninja" target="_blank">Info</a>
+                    </div>
+                    <div class="product-div">
+                        <img src="images/blastoise.png" class="blastoise" alt="Blastoise">
+                        <h3>Blastoise</h3>
+                        <p>The powerful cannons on this Pokémon's back are capable of producing water blasts that can
+                            pierce steel and concrete and
+                            can be used for high-speed charges. Blastoise deliberately makes itself heavy to withstand
+                            these powerful blasts and to
+                            crush its opponents.</p>
+                        <a href="https://pokemondb.net/pokedex/blastoise" target="_blank">Info</a>
+                    </div>
+                    <div class="product-div">
+                        <img src="images/kyogre.png" class="kyogre" alt="Kyogre">
+                        <h3>Kyogre</h3>
+                        <p>Kyogre is believed to be the personification of the sea itself, and also described in
+                            mythology as the creator of the
+                            ocean. It is said to be a powerful Pokémon, having control over the element of water and
+                            rain. It is said to have
+                            expanded the seas.</p>
+                        <a href="https://pokemondb.net/pokedex/kyogre" target="_blank">Info</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="forms">
+                <h2 id="gegevens">Gegevens</h2>
+                <form class="form1">
+                    <div class="form-element-naam">
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" name="voornaam" id="voornaam" placeholder="Voer je voornaam naam in..."
+                            required>
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" name="achternaam" id="achternaam" placeholder="Voer je achternaam naam in..."
+                            required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Voer je e-mailadres in..." required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" name="city" id="city" placeholder="Voer je woonplaats in..." required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="birthdate">Geboortedatum</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="send-to">Pokémon</label>
+                        <select id="send-to" name="send-to" required>
+                            <option value="">Kies Pokémon...</option>
+                            <option value="0">Greninja</option>
+                            <option value="1">Blastoise</option>
+                            <option value="2">Kyogre</option>
+                        </select>
+                    </div>
+
+                    <label for="question" class="textlabel">Jouw vraag</label>
+                    <textarea type="text" id="question" rows="8" name="question"></textarea>
+
+                    <div class="form-element2">
+                        <label for="category" class="category-label">Aanbiedingen via mail krijgen?</label>
+                        <div class="radio-div">
+                            <input type="radio" id="ja-button" name="category" value="algemeen" required>
+                            <label for="ja-button">Ja</label>
+                            <input type="radio" id="nee-button" name="category" value="programmeren" required>
+                            <label for="nee-button">Nee</label>
+                        </div>
+                    </div>
+
+                    <div class="voorwaarden-div">
+                        <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden" required>
+                        <label for="algemene-voorwaarden" class="category-label">Ik ga akkoord met de algemene
+                            voorwaarden</label>
+                    </div>
+
+                    <button type="submit">Verstuur</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+
+    <footer id="policy">
+        <section class="policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">algemene-voorwaarden</a>
+            <a href="#">Cookies</a>
+            <a href="#">Contact</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
